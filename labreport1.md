@@ -2,6 +2,10 @@
 
 ## The `cd` command
 1. No arguments
+```
+[user@sahara ~]$ cd
+[user@sahara ~]$ 
+```
 2. Path to a directory
 3. Path to a file
 
@@ -14,5 +18,3 @@
 1. No arguments
 2. Path to a directory
 3. Path to a file
-
-hi hi
