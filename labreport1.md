@@ -69,9 +69,12 @@ lecture1/Hello.java
 ## The `cat` command
 1. No arguments
 ```
-[user@sahara ~]$ cat 
+[user@sahara ~]$ cat
 
 ```
+
+
+
 * The `cat` command is run from the `home` directory.
 * When `cat` is run with no input, the terminal freezes and runs infinitely. This is because `cat` provides a preview of files and directories, but nothing was given as an argument.
 * An error occurs because no input is given, so `cat` cannot provide a preview of any file or directory.
