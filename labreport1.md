@@ -69,7 +69,7 @@ lecture1/Hello.java
 1. No arguments
 ```
 [user@sahara ~]$ cat 
-:gray[ ]
+<span style="color: gray;"> </span>
 ```
 2. Path to a directory
 3. Path to a file
