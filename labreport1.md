@@ -63,7 +63,13 @@ lecture1/Hello.java
 * The `ls` command is run from the `home` directory.
 * There are no files directly within `home`, so I use `lecture1/Hello.java` to access the `Hello.java` file. This outputs the path for `Hello.java`.
 * No error occurs here, but this command is ideally used to access files inside directories (not for files).
+
+
 ## The `cat` command
 1. No arguments
+```
+[user@sahara ~]$ cat 
+:gray[ ]
+```
 2. Path to a directory
 3. Path to a file
