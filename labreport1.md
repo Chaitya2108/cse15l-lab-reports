@@ -9,7 +9,15 @@
 * Before the `cd` command was run, the working directory was `home`.
 * Since an argument was not given, the `cd` command changed into the root directory, which was `home`. Since we were already in the `home` directory, nothing happened.
 * There is no output, so no error occurs.
+
 2. Path to a directory
+```
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$ 
+```
+* Before the `cd` command was run, the working directory was `home`.
+* The only directory contained directly inside of `home` was `lecture1`. When `lecture1` is passed as the argument for the `cd` command, the working address changes to `home/lecture1`.
+* No error occurs when this command is run.
 3. Path to a file
 
 ## The `ls` command
