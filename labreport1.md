@@ -33,7 +33,25 @@ bash: cd: lecture1/Hello.java: Not a directory
 
 ## The `ls` command
 1. No arguments
+```
+[user@sahara ~]$ ls
+lecture1
+[user@sahara ~]$ 
+```
+* The `ls` command is run from the `home` directory.
+* The `ls` command shows an overview of all the files and directories directly inside the working directory. No input is given, so the command works from the `home` directory. Since the only item directly inside of `home` is `messages`, the ls command outputs `messages`.
+* No error occurs with this command.
+
+
 2. Path to a directory
+```
+[user@sahara ~]$ ls lecture1
+Hello.class  Hello.java  messages  README
+[user@sahara ~]$ 
+```
+* The `ls` command is run from the `home` directory.
+* Since `ls` lists all the files within the given directory, this command lists all the directories and files in `/lecture1` because that is the input given. 
+* No error occurs on this command. 
 3. Path to a file
 
 ## The `cat` command
