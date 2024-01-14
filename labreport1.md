@@ -68,6 +68,10 @@ lecture1/Hello.java
 
 ## The `cat` command
 1. No arguments
+    ```
+    [user@sahara ~]$ cat
+    
+    ```
 * The `cat` command is run from the `home` directory.
 * When `cat` is run with no input, the terminal freezes and runs infinitely. This is because `cat` provides a preview of files and directories, but nothing was given as an argument.
 * An error occurs because no input is given, so `cat` cannot provide a preview of any file or directory.
@@ -86,7 +90,21 @@ lecture1/Hello.java
 
 3. Path to a file
     ```
-    hello world
+    [user@sahara ~]$ cat lecture1/Hello.java
+    import java.io.IOException;
+    import java.nio.charset.StandardCharsets;
+    import java.nio.file.Files;
+    import java.nio.file.Path;
+
+    public class Hello {
+    public static void main(String[] args) t
+    hrows IOException {
+        String content = Files.readString(Path
+    .of(args[0]), StandardCharsets.UTF_8);    
+        System.out.println(content);
+    }
+    }
+    [user@sahara ~]$ 
     ```
 * The `cat` command is run from the `home` directory.
 * No file is located directly inside `home`, so the path provided is `/lecture1/Hello.java`. This command outputs the code written in `Hello.java`.
