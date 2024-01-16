@@ -1,4 +1,6 @@
 # Lab Report 1 - Remote Access and FileSystem
+All commands in this lab will be run from the `lecture1` directory. The file structure for this is shown in the image below.
+![Image](/file_structure.png)
 
 ## The `cd` command
 1. No arguments
