@@ -88,7 +88,7 @@ lecture1/Hello.java
     ```
 * The `cat` command is run from the `home` directory.
 * The input given is `lecture1`, which is a directory located inside `home`. Therefore, running `cat` provides the information for `lecture1` by saying that it is a directory.
-* No error occurs, but `cat` is meant to provide the data stored in a file. Since a directory is given instead, `cat` provides the system info for that directory.
+* An error occurs because `cat` is meant to provide the data stored in a file. Since a directory is given instead, `cat` cannot provide a file preview.
 
 
 3. Path to a file
