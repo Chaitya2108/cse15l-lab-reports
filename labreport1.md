@@ -42,7 +42,7 @@ lecture1
 [user@sahara ~]$ 
 ```
 * The `ls` command is run from the `/home` directory.
-* The `ls` command shows an overview of all the files and directories directly inside the working directory. No input is given, so the command works from the `/home` directory. Since the only item directly inside of `/home` is `/lecture1`, the ls command outputs `lecture1`.
+* The `ls` command shows an overview of all the files and directories directly inside the working directory. No input is given, so the command works from the `/home` directory. Since the only item directly inside of `/home` is `lecture1`, the ls command outputs `lecture1`.
 * No error occurs with this command.
 
 
@@ -78,7 +78,7 @@ lecture1/Hello.java
     ```
 
 * The `cat` command is run from the `/home` directory.
-* When `cat` is run with no input, the terminal freezes and runs infinitely. This is because `cat` provides a preview of files and directories, but nothing was given as an argument. When 
+* When `cat` is run with no input, the terminal freezes and runs infinitely. This is because `cat` provides a preview of files and directories, but nothing was given as an argument. When I typed something in the terminal while the command was running, the terminal provided an output of the copy of whatever I typed. 
 * An error occurs because no input is given, so `cat` cannot provide a preview of any file or directory.
 
 
