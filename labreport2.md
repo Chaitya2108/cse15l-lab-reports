@@ -3,6 +3,7 @@
 ## Part 1: ChatServer
 Below is the code for ChatServer.java, along with 2 screenshots for how ChatServer is called in two different instances.
 1. The code:
+
 ```
 import java.io.IOException;
 import java.net.URI;
