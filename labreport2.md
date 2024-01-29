@@ -59,5 +59,15 @@ public class ChatServer {
 
 
 ## Part 2: Private and public key
+1. Private Key
+![Image](/private_key.png)
+* The path for the private key, as shown using `pwd`, is `/Users/JeMappelleCHJ/.ssh/id_rsa`. The path for the public key is `/Users/JeMappelleCHJ/.ssh/id_rsa.pub`
 
 
+2. Public key
+![Image](/public_key.png)
+* On the server, the path for the public key, as shown using `pwd`, is `/home/linux/ieng6/oce/07/chjodhavat/.ssh/authorized_keys`. The server does not contain the private key because it can only be accessed by the user.
+
+
+## Part 3:
+Through this lab, I learned how to use ssh keys as a more secure way of logging onto a server. While passwords can be easily leaked, ssh keys are stored only on the user's machine, preventing anyone else from logging in. I also learned how to deploy my own server from scratch using Java. Through this server, I learned how to pass multiple arguments in a URL.
