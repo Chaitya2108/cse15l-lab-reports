@@ -2,7 +2,7 @@
 
 ## Part 1: ChatServer
 Below is the code for ChatServer.java, along with 2 screenshots for how ChatServer is called in two different instances.
-1. The code:
+The code:
 
 ```
 import java.io.IOException;
@@ -44,8 +44,15 @@ public class ChatServer {
 }
 ```
 
-2. Message with no spaces:
+1. Message with no spaces:
 ![Image](/query1.png)
 * Launching the server calls the `main()` method in the `ChatServer` class, which in turn calls the `handleRequest()` method in the `Handler` class. 
 * The `main()` method takes the port number as an argument, stored in `String[] args`. This is stored in an integer field `port` as `args[0]`. The `handleRequest()` method takes the url as a parameter, stored in `URI url`. The other field in the `Handler` class is an `ArrayList` of strings called `values`. Within the `handleRequest()` method, two local arrays of strings `params[]` and `lilParams[]` exist.
-* When the server is launched with port `4000`, `args[0]` takes the value of `4000` as a string. This is parsed into an integer when stored in `port`. When `handleRequest()` is called, the url passed is `http://localhost:4000/add-message?s=hello&user=chaitya`. Within `handleRequest()`, `params` takes the values of `["s", "hello&user", "chaitya"]`. This is because `url` is parsed with the = character. Additionally, `lilParams` takes the values of `["hello","user"]` because `params[1]` is parsed using the & character. After both arrays are created, the string `"chaitya: hello"` is added to `values` because `params[2]` and `lilParams[0]` are formatted into a string.
+* When the server is launched with port `4000`, `args[0]` takes the value of `4000` as a string. This is parsed into an integer when stored in `port`. When `handleRequest()` is called, the url passed is `http://localhost:4000/add-message?s=hello&user=chaitya`. Within `handleRequest()`, `params` takes the values of `["s", "hello&user", "chaitya"]`. This is because `url` is parsed with the `=` character. Additionally, `lilParams` takes the values of `["hello","user"]` because `params[1]` is parsed using the `&` character. After both arrays are created, the string `"chaitya: hello"` is added to `values` because `params[2]` and `lilParams[0]` are formatted into a string.
+
+2. Message with spaces:
+![Image](/query2.png)
+* Since the server is already launched, only the `handleRequest()` method is called.
+* The `handleRequest()` method takes the url as a parameter, stored in `URI url`. `ArrayList` currently has the value `["chaitya: hello"]`. Within the `handleRequest()` method, `params[]` and `lilParams[]` are currently empty.
+* When this url is entered, the url passed to `handleRequest()` is `http://localhost:4000/add-message?s=how%20are%20you&user=chaitya`. Within `handleRequest()`, `params` takes the values of `["s", "how%20are%20you&user", "chaitya"]`. This is because `url` is parsed with the `=` character. `lilParams` takes the values of `["how%20are%20you","user"]` because `params[1]` is parsed using the `&` character. This time, `"chaitya: how are you"` is added to `values` because spaces are formatted to `lilParams[0]` based on wherever `%20` is located. `params[2]` and `lilParams[0]` are formatted into a string.
+
