@@ -53,7 +53,7 @@ public class ChatServer {
 2. Message with spaces:
 ![Image](/query2.png)
 * Since the server is already launched, only the `handleRequest()` method is called.
-* The `handleRequest()` method takes the url as a parameter, stored in `URI url`. `ArrayList` currently has the value `["chaitya: hello"]`. Within the `handleRequest()` method, `params[]` and `lilParams[]` are currently empty.
+* The `handleRequest()` method takes the url as a parameter, stored in `URI url`. `ArrayList values` currently has the value `["chaitya: hello"]`. Within the `handleRequest()` method, `params[]` and `lilParams[]` are currently empty.
 * `port` retains the value of 4000 because the server is not relaunched. When this url is entered, the url passed to `handleRequest()` is `http://localhost:4000/add-message?s=how%20are%20you&user=chaitya`. Within `handleRequest()`, `params` takes the values of `["s", "how%20are%20you&user", "chaitya"]`. This is because `url` is parsed with the `=` character. `lilParams` takes the values of `["how%20are%20you","user"]` because `params[1]` is parsed using the `&` character. This time, `"chaitya: how are you"` is added to `values` because spaces are formatted to `lilParams[0]` based on wherever `%20` is located. `params[2]` and `lilParams[0]` are formatted into a string. Now, the final value of `values` is `["chaitya: hello", "chaitya: how are you"]`.
 
 
