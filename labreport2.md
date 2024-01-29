@@ -59,12 +59,9 @@ public class ChatServer {
 
 
 ## Part 2: Private and public key
-
-1. Private Key
-
 ![Image](/private_key.png)
+1. Private Key
 * The path for the private key, as shown using `pwd`, is `/Users/JeMappelleCHJ/.ssh/id_rsa`. The path for the public key is `/Users/JeMappelleCHJ/.ssh/id_rsa.pub`
-
 
 2. Public key
 ![Image](/public_key.png)
