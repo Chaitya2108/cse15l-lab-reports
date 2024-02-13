@@ -96,7 +96,6 @@ bash-3.2$ find ./technical -not -type f
 ./technical/911report
 bash-3.2$ 
 ```
-3. Source: ChatGPT
 
 - Using a wildcard
 
@@ -143,7 +142,6 @@ bash-3.2$ find ./technical -type f -path "*/911*/*"
 ./technical/911report/chapter-11.txt
 bash-3.2$ 
 ```
-3. Source: ChatGPT
 
 - Searching by size
 
@@ -168,7 +166,6 @@ bash-3.2$ find ./technical -type d -size -500c
 ./technical/government/Alcohol_Problems
 bash-3.2$ 
 ```
-3. Source: ChatGPT
 
 - Searching based on time
 
@@ -196,6 +193,6 @@ bash-3.2$
 bash-3.2$ find ./technical -type f -mtime +6
 bash-3.2$ 
 ```
-3. Source: ChatGPT
 
+- My source for all of this information was ChatGPT. I first asked it for 4 interesting ways of using the `find` command, which provided me these options along with one example. I then asked it for more ways to implement each of those commands, so I chould show the commands two different ways.  
 
