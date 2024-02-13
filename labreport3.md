@@ -61,4 +61,40 @@ This error occurs because simply swapping values directly deletes the value that
 
 
 ## Part 2: Researching Commands
+4 uses of the `find` command:
+- Searching by file type:
+
+1. First example: This example uses `-type d` to search for all directories (folders) in `./technical`. This is useful for recursively finding all the folders within a given directory without accessing each one using `cd`.
+```
+bash-3.2$ find ./technical -type d
+./technical
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+./technical/plos
+./technical/biomed
+./technical/911report
+bash-3.2$ 
+```
+2. Second example: This example uses `type -not -f` to search for all items in `./technical` that are not files. This command can be helpful when looking for all files not of a specific type. For example, it can be used to find all files that are not of type `.pdf`.
+```
+bash-3.2$ find ./technical -not -type f
+./technical
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+./technical/plos
+./technical/biomed
+./technical/911report
+bash-3.2$ 
+```
+3. Source: ChatGPT
 
