@@ -58,3 +58,7 @@ public class ArrayExamples {
 
 Explanation: 
 This error occurs because simply swapping values directly deletes the value that is overwritten first. Also, looping through the full array causes the overwritten values to show up twice. This can be fixed by looping through just half the array. Also, the value that is initially overwritten can be stored in a temporary variable and then added back.
+
+
+## Part 2: Researching Commands
+
