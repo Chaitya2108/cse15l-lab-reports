@@ -99,6 +99,7 @@ bash-3.2$
 3. Source: ChatGPT
 
 - Using a wildcard
+
 1. First Example: This example uses `-name "chapter*"` to find all the files in `./technical` that start with "chapter". This can be helpful when searching a large directory for files with specific names, for ex. the chapters of a book stored in a folder.
 ```
 bash-3.2$ find ./technical -name "chapter*"
@@ -143,3 +144,4 @@ bash-3.2$ find ./technical -type f -path "*/911*/*"
 bash-3.2$ 
 ```
 3. Source: ChatGPT
+
