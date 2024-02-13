@@ -80,7 +80,7 @@ bash-3.2$ find ./technical -type d
 ./technical/911report
 bash-3.2$ 
 ```
-2. Second example: This example uses `-type -not f` to search for all items in `./technical` that are not files. This command can be helpful when looking for all files not of a specific type. For example, it can be used to find all files that are not of type `.pdf`.
+2. Second example: This example uses ` -not -type f` to search for all items in `./technical` that are not files. This command can be helpful when looking for all files not of a specific type. For example, it can be used to find all files that are not of type `.pdf`.
 ```
 bash-3.2$ find ./technical -not -type f
 ./technical
