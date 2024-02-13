@@ -160,7 +160,7 @@ bash-3.2$ find ./technical -type f -size +200k
 ./technical/911report/chapter-3.txt
 bash-3.2$ 
 ```
-2. Second example: This example uses `-type d -size -1M` to find all folders with a size of less than 1 megabyte. This can be helpful when working on a large repository, as folders that are too small can suggest that they do not have all the files they should.
+2. Second example: This example uses `-type d -size -500c` to find all folders with a size of less than 500 bytes. This can be helpful when working on a large repository, as folders that are too small can suggest that they do not have all the files they should.
 ```
 bash-3.2$ find ./technical -type d -size -500c
 ./technical
