@@ -4,6 +4,7 @@
 For this lab, I explored the bug found in `reverseInPlace()` method, found in `ArrayExamples.java`. 
 
 1. Failure-inducing input
+
 This failed JUnit test is run in `ArrayExamplesTest.java` to test the method.
 ```
 @Test
@@ -14,6 +15,7 @@ public void testReversed1() {
 ```
 
 2. Suceeding input
+
 This successful JUnit test is run in `ArrayExamplesTest.java` to test the method.
 ```
 @Test
@@ -27,6 +29,7 @@ public void testReversed2() {
 ![Image](test_error.png)
 
 4. Bug
+
 The code before:
 ```
 public class ArrayExamples {
