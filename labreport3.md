@@ -13,7 +13,6 @@ public void testReversed1() {
     assertArrayEquals(new int[]{5,4,3,2,1}, reversed1);
 }
 ```
-
 2. Suceeding input
 
 This successful JUnit test is run in `ArrayExamplesTest.java` to test the method.
@@ -24,10 +23,8 @@ public void testReversed2() {
     assertArrayEquals(new int[]{1}, reversed1);
 }
 ```
-
 3. Symptoms
 ![Image](test_error.png)
-
 4. Bug
 
 The code before:
