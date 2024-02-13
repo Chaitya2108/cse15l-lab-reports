@@ -80,7 +80,7 @@ bash-3.2$ find ./technical -type d
 ./technical/911report
 bash-3.2$ 
 ```
-2. Second example: This example uses `type -not -f` to search for all items in `./technical` that are not files. This command can be helpful when looking for all files not of a specific type. For example, it can be used to find all files that are not of type `.pdf`.
+2. Second example: This example uses `-type -not f` to search for all items in `./technical` that are not files. This command can be helpful when looking for all files not of a specific type. For example, it can be used to find all files that are not of type `.pdf`.
 ```
 bash-3.2$ find ./technical -not -type f
 ./technical
@@ -98,3 +98,48 @@ bash-3.2$
 ```
 3. Source: ChatGPT
 
+- Using a wildcard
+1. First Example: This example uses `-name "chapter*"` to find all the files in `./technical` that start with "chapter". This can be helpful when searching a large directory for files with specific names, for ex. the chapters of a book stored in a folder.
+```
+bash-3.2$ find ./technical -name "chapter*"
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-13.1.txt
+./technical/911report/chapter-13.2.txt
+./technical/911report/chapter-13.3.txt
+./technical/911report/chapter-3.txt
+./technical/911report/chapter-2.txt
+./technical/911report/chapter-1.txt
+./technical/911report/chapter-5.txt
+./technical/911report/chapter-6.txt
+./technical/911report/chapter-7.txt
+./technical/911report/chapter-9.txt
+./technical/911report/chapter-8.txt
+./technical/911report/chapter-12.txt
+./technical/911report/chapter-10.txt
+./technical/911report/chapter-11.txt
+bash-3.2$ 
+```
+2. Second Example: This example uses `-type f -path "*/911*/*"` to find all the files in all the folders that contain "911" in their name. This can be helpful in finding particular files within folders that have the similar names and can be stored in different locations. 
+```
+bash-3.2$ find ./technical -type f -path "*/911*/*"
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-13.1.txt
+./technical/911report/chapter-13.2.txt
+./technical/911report/chapter-13.3.txt
+./technical/911report/chapter-3.txt
+./technical/911report/chapter-2.txt
+./technical/911report/chapter-1.txt
+./technical/911report/chapter-5.txt
+./technical/911report/chapter-6.txt
+./technical/911report/chapter-7.txt
+./technical/911report/chapter-9.txt
+./technical/911report/chapter-8.txt
+./technical/911report/preface.txt
+./technical/911report/chapter-12.txt
+./technical/911report/chapter-10.txt
+./technical/911report/chapter-11.txt
+bash-3.2$ 
+```
+3. Source: ChatGPT
