@@ -96,6 +96,7 @@ bash-3.2$ find ./technical -not -type f
 ./technical/911report
 bash-3.2$ 
 ```
+3. Source: [Geeks For Geeks](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
 
 - Using a wildcard
 
@@ -142,6 +143,7 @@ bash-3.2$ find ./technical -type f -path "*/911*/*"
 ./technical/911report/chapter-11.txt
 bash-3.2$ 
 ```
+3. Source: [EDUCBA](https://www.educba.com/linux-wildcards/)
 
 - Searching by size
 
@@ -166,6 +168,7 @@ bash-3.2$ find ./technical -type d -size -500c
 ./technical/government/Alcohol_Problems
 bash-3.2$ 
 ```
+3. Source: [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-search-files-in-the-linux-terminal/#:~:text=How%20to%20Search%20a%20File%20by%20Size%20in%20Linux,than%20and%20less%20than%2C%20respectively.&text=In%20the%20above%20screenshot%2C%20we%27re%20finding%20all%20the%20files,size%20greater%20than%201%20GB.)
 
 - Searching based on time
 
@@ -193,6 +196,7 @@ bash-3.2$
 bash-3.2$ find ./technical -type f -mtime +6
 bash-3.2$ 
 ```
+3. Source: [NixCraft](https://www.cyberciti.biz/faq/howto-finding-files-by-date/)
 
 - My source for all of this information was ChatGPT. I first asked it for 4 interesting ways of using the `find` command, which provided me these options along with one example. I then asked it for more ways to implement each of those commands, so I chould show the commands two different ways.  
 
