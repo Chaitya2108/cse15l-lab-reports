@@ -198,5 +198,5 @@ bash-3.2$
 ```
 3. Source: [NixCraft](https://www.cyberciti.biz/faq/howto-finding-files-by-date/)
 
-- My source for all of this information was ChatGPT. I first asked it for 4 interesting ways of using the `find` command, which provided me these options along with one example. I then asked it for more ways to implement each of those commands, so I chould show the commands two different ways.  
+
 
