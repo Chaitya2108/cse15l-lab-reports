@@ -17,15 +17,15 @@ ssh chjodhavat@ieng6-202.ucsd.edu
 ```
 
 ## Step 5: Clone the repository
-Once in ieng6, I used the following command to fork the repository. I obtained this link from the Github website.
+Once in ieng6, I used the following command to fork the repository. I obtained this link from the Github website. The SSH link was used because the remote server had the SSH key used to access my personal GitHub account. 
 ```
 git clone git@github.com:Chaitya2108/lab7.git
 ```
 
 ## Step 6: Run the tests, show they fail
-I use the bash script to run the JUnit tests. They fail becuase the implementation is incorrect.
-```
-bash test.sh
-```
+I first used `cd lab7` to cd into the cloned repository. Instead of typing `lab7`, I used `<tab>` after pressing the first letter to autocomplete the repository's name. I then use the bash script to run the JUnit tests. To do this, I run `bash test.sh`, again using `<tab>` after typing the first two letters to autocomplete the file name. They fail becuase the implementation is incorrect.
 
-## Step 7
+
+## Step 7: Edit the file using vim
+To acccess the file, I type `vim ListExamples.java`. After typing `Li`, I use `<tab>` to autocomplete up to `ListExamples`. I then type `.` and use `<tab>` to access the `.java` file. Once in vim, I press the following keys to locate the error and fix it: `<4><4><G><right><right><right><right><right><x><i><2><esc><:><w><q><enter>`.
+
