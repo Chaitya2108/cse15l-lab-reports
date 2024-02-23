@@ -25,7 +25,16 @@ git clone git@github.com:Chaitya2108/lab7.git
 ## Step 6: Run the tests, show they fail
 I first used `cd lab7` to cd into the cloned repository. Instead of typing `lab7`, I used `<tab>` after pressing the first letter to autocomplete the repository's name. I then use the bash script to run the JUnit tests. To do this, I run `bash test.sh`, again using `<tab>` after typing the first two letters to autocomplete the file name. They fail becuase the implementation is incorrect.
 
-
 ## Step 7: Edit the file using vim
 To acccess the file, I type `vim ListExamples.java`. After typing `Li`, I use `<tab>` to autocomplete up to `ListExamples`. I then type `.` and use `<tab>` to access the `.java` file. Once in vim, I press the following keys to locate the error and fix it: `<4><4><G><right><right><right><right><right><x><i><2><esc><:><w><q><enter>`.
 
+## Step 8: Run the JUnit tests again.
+Since bash commands are saved, I press `<up><up><enter>` to locate and run `test.sh`. This time, the tests run correctly because the implementation is fixed.
+
+## Step 9: Commit and push changes.
+I run the following commands to commit and push my changes.
+```
+git add *
+git commit -m "commit changes"
+git push
+```
