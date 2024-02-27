@@ -15,6 +15,7 @@ I used the following command to log into ieng6. No password was required because
 ```
 ssh chjodhavat@ieng6-202.ucsd.edu
 ```
+
 ![Image](step1.png)
 
 ## Step 2: Clone the repository
@@ -22,18 +23,22 @@ Once in ieng6, I used the following command to fork the repository. I obtained t
 ```
 git clone git@github.com:Chaitya2108/lab7.git
 ```
+
 ![Image](step2.png)
 
 ## Step 3: Run the tests, show they fail
 I first used `cd lab7` to cd into the cloned repository. Instead of typing `lab7`, I used `<tab>` after pressing the first letter to autocomplete the repository's name. I then use the bash script to run the JUnit tests. To do this, I run `bash test.sh`, again using `<tab>` after typing the first two letters to autocomplete the file name. They fail becuase the implementation is incorrect.
+
 ![Image](step3.png)
 
 ## Step 4: Edit the file using vim
 To acccess the file, I type `vim ListExamples.java`. After typing `Li`, I use `<tab>` to autocomplete up to `ListExamples`. I then type `.` and use `<tab>` to access the `.java` file. Once in vim, I press the following keys to locate the error and fix it: `<4><4><G><right><right><right><right><right><x><i><2><esc><:><w><q><enter>`.
+
 ![Image](step4.png)
 
 ## Step 5: Run the JUnit tests again.
 Since bash commands are saved, I press `<up><up><enter>` to locate and run `test.sh`. This time, the tests run correctly because the implementation is fixed.
+
 ![Image](step5.png)
 
 ## Step 6: Commit and push changes.
@@ -43,4 +48,5 @@ git add *
 git commit -m "commit changes"
 git push
 ```
+
 ![Image](step6.png)
