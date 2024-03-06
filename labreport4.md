@@ -48,6 +48,6 @@ git add *
 git commit -m "commit changes"
 git push
 ```
-`git add *` adds all changes made to the repository into the staging area. `git commit -m` commits the changes to the repository permanently. `git push` pushes all the changes onto the repository stored on GitHub, allowing other users to pull the updated version.
+`git add *` adds all changes made to the repository into the staging area. `git commit -m` commits the changes to the repository permanently, with the commit message being given by the user. `git push` pushes all the changes onto the repository stored on GitHub, allowing other users to pull the updated version.
 
 ![Image](step6.png)
