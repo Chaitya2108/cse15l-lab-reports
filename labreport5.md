@@ -16,7 +16,7 @@ This lab report emulates a debugging scenario used to show the debugging procees
 
 - Directory structure:
 ```
-\lab 7
+\lab7
     \ListExamples.class
     \ListExamples.java
     \ListExamplesTest.java
