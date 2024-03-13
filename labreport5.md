@@ -123,4 +123,5 @@ Edit line 42 in `ListExamples.java` to change the variable's name from `index1` 
 // after: index2 += 1
 ```
 
-
+## Part 2 - Reflection
+The second half of CSE 15L taught me many industry-relevant skills that I did not know before. For example, I was not familiar with using JDB before the labs. This course showed me how to use JDB to make debugging much faster than JUnit. I also learned how to use different branches on GitHub in order to have several different users work on the same repository.
